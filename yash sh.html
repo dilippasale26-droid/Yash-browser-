@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सर्च इंजिन लाँचर</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #ffcc00;
+      font-size: 24px;
+    }
+    select, button {
+      padding: 12px;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 80%;
+    }
+    select {
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #444;
+    }
+    button {
+      background-color: #ffcc00;
+      color: #000;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e6b800;
+    }
+    .note {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔗 Dilip सर्च इंजिन लाँचर</h1>
+  <p>खालील यादीतून सर्च इंजिन निवडा:</p>
+
+  <select id="engine">
+    <option value="https://www.google.com">Google</option>
+    <option value="https://www.youtube.com">YouTube</option>
+    <option value="https://en.wikipedia.org">Wikipedia</option>
+    <option value="https://duckduckgo.com">DuckDuckGo</option>
+    <option value="https://www.startpage.com">Startpage</option>
+    <option value="https://search.brave.com">Brave Search</option>
+    <option value="https://www.ecosia.org">Ecosia</option>
+    <option value="https://www.mojeek.com">Mojeek</option>
+    <option value="https://www.qwant.com">Qwant</option>
+    <option value="https://www.swisscows.com">Swisscows</option>
+    <option value="https://www.bing.com">Bing</option>
+    <option value="https://www.yahoo.com">Yahoo</option>
+    <option value="https://www.reddit.com">Reddit</option>
+    <option value="https://www.stackoverflow.com">Stack Overflow</option>
+  </select>
+  <br>
+  <button onclick="goToSite()">वेबसाईट उघडा</button>
+  <div class="note">तुम्ही निवडलेली साईट नवीन टॅबमध्ये उघडेल.</div>
+
+  <script>
+    function goToSite() {
+      const engine = document.getElementById("engine").value;
+      window.open(engine, "_blank");
+    }
+  </script>
+</body>
+</html>
